@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="master.css">
+    <title>Typing Speed</title>
+</head>
+
+<body>
+    <div class="game">
+        <div class="name">Typing Speed Test Game</div>
+        <div class="container">
+            <div class="select-lvl">
+                <p>Choose Your Level</p>
+                <div class="lvls">
+                    <label>
+                        <input type="radio" name="lvl" id="easy">
+                        <div>Easy</div>
+                    </label>
+                    <label>
+                        <input type="radio" name="lvl" id="normal" checked>
+                        <div>Normal</div>
+                    </label>
+                    <label>
+                        <input type="radio" id="hard" name="lvl">
+                        <div id="hard">Hard</div>
+                    </label>
+                </div>
+            </div>
+            <div class="continue">Continue</div>
+            <div class="message">
+                You Are Playing On Level <span class="lvl"></span>
+                & You Have <span class="sec"></span> Seconds To Type The Word
+            </div>
+            <div class="start">Start Playing</div>
+            <div class="word"></div>
+            
+            <input type="text" class="typeWord">
+            <div class="upcoming-words">Words Will Show Here</div>
+            <div class="control">
+                <div class="info">
+                    <div class="time">Time Left: <span></span> Seconds</div>
+                    <div class="score">Score: <span class="got">0</span> From <span class="total"></span></div>
+                </div>
+                <div class="progress">
+                    <span></span>
+                </div>
+            </div>
+            <div class="win">You Win!</div>
+            <div class="lose">Game Over!</div>
+            <a class="again" href="index.html">Play Again</a>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
